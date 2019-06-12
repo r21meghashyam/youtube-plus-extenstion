@@ -1,20 +1,21 @@
 {
     "manifest_version": 2,
-    "name": "Hotstar Hack",
+    "name": "Youtube Plus",
     "version": "1.0.0",
-    "description": "Hack to watch hotstar unlimited",
+    "description": "Giving you more features to youtube.",
     "icons": {
-        "16": "favicon-16x16.png",
-        "32": "favicon-32x32.png"
+        "16": "images/favicon-16x16.png",
+        "32": "images/favicon-32x32.png",
+        "128": "images/favicon-128x128.png"
     },
     "content_scripts":[
         {
-            "matches":["https://www.hotstar.com/*"],
+            "matches":["https://www.youtube.com/*"],
             "js":["content-script.js"]
         }
     ],
     "permissions": [
         "storage",
-        "https://www.hotstar.com/*"
+        "https://www.youtube.com/*"
       ]
 }
